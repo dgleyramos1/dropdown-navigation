@@ -214,6 +214,20 @@ header nav {
 }
 
 
+/*======Footer======*/
+footer{
+  height: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+footer p{
+  font-size: 14px;
+}
+footer p a{
+  color: hsl(228, 45%, 44%);
+}
+
+
 
 /* Dispositivos médios (tablets com 768px ou mais)*/
 @media (min-width: 768px) {
