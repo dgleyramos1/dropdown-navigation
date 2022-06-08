@@ -111,7 +111,10 @@ header nav {
   margin: 20px 0px;
 }
 #nav a{
-  color: black;
+  color: var(--medium-gray);
+}
+#nav a:hover{
+  color: var(--almost-black);
 }
 .dropdown{
   padding-left: 20px;
@@ -164,8 +167,51 @@ header nav {
 
 
 
+/*======Hero======*/
+#imagem{
+  display: flex;
+  width: 100%;
+  height: 230px;
+  margin: 0 5px;
+  background-image: url("./../img/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
 
 
+#cta{
+  height: auto;
+  margin: 25px 5px;
+  text-align: center;
+}
+#cta h1{
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+#cta p{
+  color: var(--medium-gray);
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+#cta a{
+  padding: 10px 35px;
+  background-color: #000;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+#brands{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#brands img {
+  width: 60px;
+}
 
 
 
@@ -216,14 +262,14 @@ header nav {
     border-radius: 10px;
   }
   .dropdown_features{
-    position: relative;
-    top: 15px;
-    left: -40px;
+    position: absolute;
+    top: 50px;
+    left: 190px;
   }
   .dropdown_company{
-    position: relative;
-    top: 15px;
-    left: 0;
+    position: absolute;
+    top: 50px;
+    left: 350px;
   }
 
   .dropdown_close{
@@ -250,5 +296,57 @@ header nav {
   #authentication a:last-child{
     padding: 5px 15px;
   }
+
+  #hero .container .row{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  #imagem{
+    height: 100%;
+    order: 2;
+    display: flex;
+    background-image: url("./../img/image-hero-desktop.png");
+  }
+  #cta{
+    margin-left: 150px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
   
+  #cta h1{
+    font-size: 65px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 25px;
+  }
+  #cta p{
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  #cta a{
+    border: 2px solid #000;
+  }
+  #cta a:hover{
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+  }
+  #brands{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+  }
+  #brands img{
+    width: 80px;
+  }
 }
